@@ -45,21 +45,38 @@
 
 .col-6 {
     width: calc(100% / 12 * 6);
-    padding: 1rem 1rem;   
+    padding: 1rem 1rem;
     display: flex;
     justify-content: center;
 }
 
-.img_static{
+.img_card {
+    /* width: 100%;
+    background: url("/assets/img/1.webp") no-repeat;
+    height: inherit; */
+    position: relative;
+}
+
+.img_static {
     width: 100%;
+    height: 100%;
+    max-height: 530px;
 }
 
 .img_hoov {
-    width: 100%;
-    opacity: 0%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    max-height: 530px;
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 
-.img_static:hover {    
+.img_hoov:hover {
+    opacity: 1;
+}
+
+/* .img_static:hover {    
     visibility: collapse;
 
 }
@@ -67,7 +84,7 @@
 .img_hoov:hover {
     visibility: visible;
     width: 100%;
-}
+} */
 
 .heart_square {
     width: 40px;
@@ -91,6 +108,7 @@
     font-size: 0.8rem;
     color: var(--bol-white);
     padding-top: 2px;
+    z-index: 99;
 }
 
 .green_rectangle {
@@ -104,6 +122,7 @@
     font-size: 0.8rem;
     color: var(--bol-white);
     padding-top: 2px;
+    z-index: 99;
 }
 
 .price {
@@ -143,11 +162,12 @@ header {
 
 /* #region footer */
 
-footer{
+footer {
     background-color: var(--bol-footer);
     color: var(--bol-white);
 }
-footer span{
+
+footer span {
     padding-top: 10px;
     padding-right: 10px;
 }
