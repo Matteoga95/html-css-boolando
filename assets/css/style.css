@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;   
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -52,6 +53,43 @@ position: relative;
     text-align: center;
     font-size: 2rem;    
 }
+
+.red_rectangle{
+    width: 40px;
+    height: 20px;
+    background-color: var(--bol-red);
+    position: absolute;
+    bottom: 100px;
+    left: 15px;
+    text-align: center;
+    font-size: 0.8rem;  
+    color: var(--bol-white); 
+    padding-top: 2px;
+}
+
+.green_rectangle{
+    width: 80px;
+    height: 20px;
+    background-color: var(--bol-green);
+    position: absolute;
+    bottom: 100px;
+    left: 60px;
+    text-align: center;
+    font-size: 0.8rem;  
+    color: var(--bol-white); 
+    padding-top: 2px;
+}
+
+.price{
+    color: var(--bol-red);
+    font-weight: bold;
+}
+.sconto{
+    color: var(--bol-footer);
+    font-weight: 400;
+
+}
+
 /* #endregion Utility */
 
 
@@ -67,3 +105,10 @@ header{
 }
 
 /* #endregion Header */
+
+/* #region main */
+.undercard_text{
+    color: var(--bol-footer);
+    text-align: left;
+}
+/* #endregion main */
