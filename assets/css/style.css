@@ -33,8 +33,6 @@
 
 }
 
-
-
 .col-4 {
     width: calc(100% / 12 * 4);
     text-align: center;
@@ -51,9 +49,7 @@
 }
 
 .img_card {
-    /* width: 100%;
-    background: url("/assets/img/1.webp") no-repeat;
-    height: inherit; */
+ 
     position: relative;
 }
 
@@ -76,15 +72,6 @@
     opacity: 1;
 }
 
-/* .img_static:hover {    
-    visibility: collapse;
-
-}
-
-.img_hoov:hover {
-    visibility: visible;
-    width: 100%;
-} */
 
 .heart_square {
     width: 40px;
@@ -142,7 +129,7 @@
 /* #region Header */
 header {
     background-color: var(--bol-header);
-    box-shadow: 2px;
+    box-shadow: 0 6px 10px -6px black;
     color: var(--bol-white);
 }
 
