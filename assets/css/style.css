@@ -1,0 +1,49 @@
+/* #region Common */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+
+:root {
+    --bol-header:#ff6900 ;
+    --bol-footer: #1a1a1a;
+    --bol-green: #008000;
+    --bol-red: #ff0000; 
+    --bol-white: white;   
+  }
+/* #endregion Common */
+
+/* #region Utility */
+
+.row {
+    display: flex;
+    flex: wrap;
+    gap: 1rem;
+    
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+    text-align: center;
+    padding: 1rem 0;
+
+}
+
+/* #endregion Utility */
+
+
+/* #region Header */
+header{
+    background-color: var(--bol-header);
+    box-shadow: 2px;
+    color: var(--bol-white) ;
+}
+
+.logo{
+    width: 30%;
+}
+
+/* #endregion Header */
